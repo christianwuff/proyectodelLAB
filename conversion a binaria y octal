@@ -1,0 +1,46 @@
+// num.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+
+ 
+void main()
+{
+    int base, suma, num, op, res, i, k;
+    base = 1;
+    suma = 0;
+    printf("INGRESE LA OPCION DE CONVERSION QUE QUIERE REALIZAR:\n\t");
+  	printf("1.-Convertir Decimal a Binario\n\t");
+		printf("2.-Convertir Decimal a Octal\n\t");
+     
+    scanf("\n%d\n\t", &op);
+    printf("Ingresa un numero:\n\t");
+    scanf("%d", &num);
+    switch (op)
+    {
+        case 1:
+            while(num >= 1)
+            {//inicio while binarios
+                res = num % 2;
+                num = num / 2;
+                suma = suma + res * base;
+                base = base * 10;
+            }//fin while (binarios)
+            printf("El numero binario es:\t%d\n", suma);
+            break;
+        case 2:
+            do
+            {//inicio while octales
+                res = num % 8;
+                num = num / 8;
+                suma = suma + res * base;
+                base = base * 10;
+ 
+            } while(num > 0);//fin while (octales)
+            printf("El numero octal es:\t%d\n", suma);
+            break;
+    
+    }
+	getch();
+}

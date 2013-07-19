@@ -1,0 +1,36 @@
+// area de circun6feren6cia.cpp : Defines the entry point for the console application.
+//
+
+// christian.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+  float diametro,area,PI;
+	  printf("\tcalculo del area de un6a circunferencia \n");
+	  printf("\t==========================\n\n");
+
+
+	  printf("Ingrese la diametro:");
+	  scanf("%f",&diametro);
+
+	PI=3.1415926536
+if (diametro>0)
+{
+
+//   calculo de area
+
+area=((PI/4)*(diametro*diametro));
+
+printf("\n El area de la circunferencia  es: %f",area);
+} 
+else 
+{
+printf("\t==ERROR........!! IN6GRESE VALORES POSITIVOS====\n\n");
+}
+getch();
+}

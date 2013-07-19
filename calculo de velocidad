@@ -1,0 +1,28 @@
+// num.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+
+ 
+void main()
+{
+    int velocidad, distancia, tiempo;
+
+  printf("\n**========INGRESE LOS DATOS========**\n\t");
+	printf("\nINGRESE LA DISTANCIA:\n\t");
+	scanf("%d", &distancia);
+	printf("\nINGRESE EL TIEMPO:\n\t");
+	scanf("%d", &tiempo);
+if (distancia>0 && tiempo>0)
+{
+	velocidad=distancia/tiempo;
+	printf("\nLA VELOCIDAD ES:\n\t%d", velocidad);
+}
+else
+{
+	printf("ERROR POR FAVOR INGRESE VALOR POSITIVOS Y MAYORES A CERO....!!!");
+}
+    
+	getch();
+}

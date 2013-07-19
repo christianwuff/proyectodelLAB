@@ -1,0 +1,35 @@
+// christian.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+  float base,altura,area;
+	  printf("\tcalculo del area del cuadrado\n")
+	  printf("\t==========================\n\n");
+
+
+	  printf("Ingrese la base:");
+	  scanf("%f",&base);
+
+	  printf("Ingrese la altura:");
+scanf("%f",&altura);
+
+if ((base>0) &&   (altura>0))
+{
+
+//   calculo de area
+
+area=(base*altura);
+
+printf("\n El area del cuadrado es: %f  Mts2",area);
+} 
+else 
+{
+printf("\t==ERROR........!! IN6GRESE VALORES POSITIVOS====\n\n");
+}
+getch();
+}

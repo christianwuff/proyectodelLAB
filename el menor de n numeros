@@ -1,0 +1,31 @@
+// el menor de 5numeros.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+
+int main()
+{
+  int n, i, numero, mayor, menor;
+	printf("\nPOR FAVOR..! INGRESE LA CANTIDAD DE NUMEROS QUE VA A NGRESAR:\n\n");
+	scanf("%d", &n);
+	menor=999;
+	for (i = 1; i <= n; i++)
+	{
+		printf("\nINGRESE EL NUMERO:\t");
+		scanf("%d", &numero);
+		if (numero < menor)
+		{
+			menor = numero;
+		}
+	}
+
+		printf("\nEL NUMERO MENOR ES=\t%d", menor);
+	getch();
+		return 0;
+	
+}
+

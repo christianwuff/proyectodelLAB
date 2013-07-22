@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main(void)
+{
+  int numero,b,p,i;
+	int contador_pares;
+
+
+printf("determina numeros de digitos pares \n");
+	printf("Introduzca un numero entero: \n");
+	scanf("%d",&numero);
+contador_pares=0;
+
+	while(numero>0)
+	{
+		b=(numero%10);
+		p=(b%2);
+		if(p==0)
+		{
+			printf("%d\n",b);
+			contador_pares=contador_pares+1;
+		}
+		numero=(numero/10);
+	
+	}
+	
+	printf("nume digitos pares son %d\n",contador_pares);
+	getch();
+}

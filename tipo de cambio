@@ -1,0 +1,28 @@
+// tipo de cambio.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main()
+{
+  int monto;
+	float cambio, c;
+	printf("\nINTRODUZCA EL MONTO EN BOLIVIANOS:\n\n");
+	scanf("%d", &monto);
+	if (monto>0)
+	{
+	c = 6.85;
+	cambio=monto+c;
+		printf ("\nEL CAMBIO A DOLAR ES:\n\n");
+	printf("%d", cambio);
+	}
+	else
+	{
+		printf("ERROR VUELVA AH INTRODUCIR EL MONTO POSITIVO");
+	}
+getch();
+
+}

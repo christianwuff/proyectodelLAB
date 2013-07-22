@@ -1,0 +1,22 @@
+// un rango numeros primos.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+main()
+{
+  
+	int numero, result;
+	printf("\n*******CALCULO DE RAIZ CUADRADA******\n\t");
+	printf("\nINGRESE DEL NUMERO QUE DESEA CALCULAR\n\t");
+	scanf("%d", &numero);
+
+	
+	result=sqrt(numero);
+	printf("LA RAIZ CUADRADA ES : %d", result);
+
+	getch();
+
+}

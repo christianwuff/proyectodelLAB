@@ -1,0 +1,37 @@
+// calculo de peso.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+  char H, M, sex;
+	float altura, peso;
+
+	printf("\nINTRODUZCA EL SEXO DE LA PERSONA (H o M):\n\n");
+	scanf("%d", &sex);
+		if (H)
+		{
+			printf("\nINTRODUZCA LA ALTURA DEL HOMBRE:\n\n");
+			scanf("%d", &altura);
+			peso=(72.2*altura)-58;
+			printf("\nEL PESO DEL HOMBRE ES:\n\n");
+			printf("\n%D\n", peso);
+			peso=(72.2*altura)-58;
+			
+		}
+		else (M)
+		{
+			printf("\nINTRODUZCA LA ALTURA DE LA MUJER:\n\n");
+			scanf("%d", &altura);
+			peso=(72.2*altura)-58;
+			printf("\nEL PESO DEL HOMBRE ES:\n\n");
+			printf("\n%D\n", peso);
+			peso=(72.2*altura)-58;
+			
+		}
+getch();
+
+}

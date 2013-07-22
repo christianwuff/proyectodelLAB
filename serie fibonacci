@@ -1,0 +1,45 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "math.h"
+
+void main(void)
+{ 
+  int fibo1, fibo2, i; 
+	fibo1 = 1; 
+	fibo2 = 1; 
+	printf ("%d\n", fibo1); 
+	for (i = 0; i < 200; i++) 
+	{ 
+		printf ("%d\n", fibo2); 
+		fibo2 += fibo1; 
+		fibo1 = fibo2 - fibo1; 
+	} 
+	getch();
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+
+void main(void)
+{ 
+int numero;
+int contador;
+int acumulador;
+
+printf("introduzca numero entero positivo: \n");
+scanf("%d",&numero);
+
+contador=1;
+acumulador=0;
+while(contador<=numero)
+
+{
+	acumulador=acumulador+numero;
+	contador=contador+1;
+}
+
+
+printf("resultado es:%d\n",acumulador);
+getch();
+}

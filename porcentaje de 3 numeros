@@ -1,0 +1,40 @@
+// 3 numeros con porcentages.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{
+  int a, b, c;
+	float porcenta, porcentb, porcentc, sum;
+
+	printf("\n\nCULCULO DE PORCENTAJES\n\n");
+	printf("\nINTRODUZCA EL PRIMER NUMERO:\n");
+	scanf("%d", &a);
+	printf("\nINTRODUZCA EL SEGUNDO NUMERO:\n");
+	scanf("%d", &b);
+	printf("\nINTRODUZCA EL TERCER NUMERO:\n");
+	scanf("%d", &c);
+
+	if(a>=0 && b>=0 && c>=0)
+	{
+		sum= a + b + c;
+		porcenta=(a/sum)*100;
+		porcentb=(b/sum)*100;
+		porcentc=(c/sum)*100;
+
+		printf("\nLOS PORCENTAJES DE LOS NUMEROS SON:\n\n");
+		printf("\n%d\n", &porcenta);
+		printf("\n%d\n", &porcentb);
+		printf("\n%d\n", &porcentc);
+
+	}
+	else
+	{
+		printf("ERROR INTRODUZCA NUMEROS POSITIVOS");
+	}
+	getch();
+
+}

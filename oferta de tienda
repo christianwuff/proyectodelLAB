@@ -1,0 +1,58 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+void main(void)
+{
+
+  float valor1,valor2;
+	float sub1,sub2;
+	float total1,total2;
+		float ing;
+		float des;
+
+			printf("Introduzca nombre: \n");
+			
+		printf("Introduzza monto: \n");
+		scanf("%f",&valor1);
+
+		if(valor1>=250)
+		{
+			sub1=(valor1*20/100);
+			printf("El descuento es: %f \n",sub1);
+				total1=(valor1-sub1);
+				printf("Total a pagar: %f \n",total1);
+		}
+		else
+		{
+			sub1=(valor1*15/100);
+			printf("El descuento es: %f \n",sub1);
+				total1=(valor1-sub1);
+				printf("Total a pagar: %f \n",total1);
+		}
+
+printf("Introduzca nombre: \n");
+			
+		printf("Introduzca monto: \n");
+		scanf("%f",&valor2);
+
+		if(valor2>=250)
+		{
+			sub2=(valor2*20/100);
+			printf("El descuento es: %f \n",sub2);
+				total2=(valor2-sub2);
+				printf("Total a pagar: %f \n",total2);
+		}
+		else
+		{
+			sub2=(valor2*15/100);
+			printf("El descuento es: %f\n",sub2);
+				total2=(valor2-sub2);
+				printf("Total a pagar: %f \n",total2);
+		}
+		ing=(total1 + total2);
+		printf("Total ingresos: %f \n",ing);
+			des=(sub1 + sub2);
+			printf("Total descuento: %f \n",des);
+
+getch();
+}

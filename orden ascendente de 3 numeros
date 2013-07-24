@@ -1,0 +1,32 @@
+#include "iostream.h"
+#include "conio.h"
+
+main()
+{
+int a,b,c,temp;
+printf("Ingrese un numero: ");
+cin>>a;
+printf("Ingrese un segundo numero: ");
+cin>>b;
+printf("Ingrese un tercer numero: ");
+cin>>c;
+
+  if (a>b)
+    {temp=a;
+     a=b;
+     b=temp;
+     }
+       if (a>c)
+         {temp=a;
+          a=c;
+          c=temp;
+          }
+           if (b>c)
+             {temp=b;
+              b=c;
+              c=temp;
+              }
+printf("Ordenando los numeros de forma ascendente:");
+printf("\n"%d %d %d", a,b,c);
+getch();
+}

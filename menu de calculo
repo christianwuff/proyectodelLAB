@@ -1,0 +1,75 @@
+// menu.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+float area_triangulo(int base, int altura);
+float area_cuadrado(int lado);
+float area_circunferencia(float diametro);
+int main ()
+{
+  int opcion;
+	int a, b;
+	int bandera;
+	float area;
+
+	do
+	{
+		printf("\n *********menu********\n\t");
+		printf(" 1.- area del triangulo\n");
+		printf(" 2.- area del cuadrado\n");
+		printf(" 3.- area de la circunferencia\n");
+		printf(" 0.- salir\n\t");
+		printf(" Eliga su opcion\n\t");
+		scanf("%d", &opcion);
+		switch(opcion)
+		{
+		case 1:
+				printf("Ingrese la base \n");
+				scanf("%d", &b);
+				printf("Ingrese la altura \n");
+				scanf("%d", &a);
+				area=area_triangulo(b,a);
+				printf("\nEl area es: %f\t", area);
+				break;
+		case 2:
+				printf("Ingrese el lado \n");
+				scanf("%d", &a);
+				area=area_cuadrado(a);
+				printf("\nEl area es: %f\t", area);
+				break;
+		case 3:
+				printf("Ingrese el diametro \n");
+				scanf("%d", &a);
+				area=area_circunferencia(a);
+				printf("\nEl area es: %f\t", area);
+				break;
+		case 0:
+				bandera=1;
+				break;
+		default:
+			printf("\n Opcion no valida:\t");
+
+		}
+	}
+	while (opcion!=0);
+	getch();
+	return(0);
+}
+float area_triangulo(int base, int altura)
+{
+	float area=(base*altura);
+	return(area);
+}
+float area_cuadrado(int lado)
+{
+	float area=(lado*lado);
+	return(area);
+}float area_circunferencia(float
+						   diametro)
+{
+	float area=(3.1416/4)*(diametro*diametro);
+	return(area);
+}

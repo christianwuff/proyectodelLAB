@@ -1,0 +1,45 @@
+//christian descuento en tienda cpp.
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+
+void main()
+{int N,i;
+ char nombre[50];
+ float valor,totalpagar,descuento,ingresototal,totaldescuento;
+  N=10;
+  descuento=0;
+  ingresototal=0;
+  totaldescuento=0;
+  for(i=0;i<=N-1;i++)
+  {printf("\n\nINGRESE NOMBRE DEL CLIENTE: ");
+   scanf("%ls",&nombre);
+   printf("\nINGRESE EL VALOR DE LA COMPRA: ");
+   scanf("%f",&valor);
+    if(valor >= 250)
+    {totalpagar=valor-(valor*0.20);
+     printf("\n\tNOMBRE DEL CLIENTE: %ls ",nombre);
+	   printf("\n\tVALOR DE LA COMPRA: %f ",valor);
+	   printf("\n\tDESCUENTO DEL 20 PORCIENTO ");
+	   printf("\n\tEL TOTAL A PAGAR ES: %f ",totalpagar);
+	   descuento=descuento+20;
+	   }
+	 else
+      {totalpagar=valor-(valor*0.15);
+	   printf("\n\tNOMBRE DEL CLIENTE: %ls ",nombre);
+	   printf("\n\tVALOR DE LA COMPRA: %f ",valor);
+	   printf("\n\tDESCUENTO DEL 15 PORCIENTO ");
+	   printf("\n\tEL TOTAL A PAGAR ES: %f ",totalpagar);
+	   descuento=descuento+15;
+	   }
+	ingresototal=ingresototal+totalpagar;
+	totaldescuento=totaldescuento+descuento;
+     }
+  printf("\n\n\t***INGRESO TOTAL: %f ",ingresototal);
+  printf("\n\n\t***TOTAL DE DESCUENTO: %f ",totaldescuento);
+
+ 
+
+	getch();
+}
